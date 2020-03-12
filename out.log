@@ -1,0 +1,45 @@
+2020-03-11 23:04:14,014 [INFO ]  Starting Rasa server on http://localhost:5008
+2020-03-11 23:04:16,514 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-11 23:08:32,266 [ERROR]  Exception occurred while handling uri: 'http://localhost:5008/model/parse%20-d%20%27%7B%22text%22:%22hola%22%7D%27'
+Traceback (most recent call last):
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /model/parse -d '{"text":"hola"}' not found
+2020-03-11 23:13:26,323 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-11 23:14:03,465 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-11 23:24:41,433 [WARNI]  Feature 'intent_question' could not be found in feature map.
+2020-03-11 23:25:16,035 [WARNI]  Feature 'intent_question' could not be found in feature map.
+2020-03-11 23:25:16,072 [WARNI]  Feature 'intent_question' could not be found in feature map.
+2020-03-11 23:41:16,906 [INFO ]  Starting Rasa server on http://localhost:5008
+2020-03-11 23:41:19,252 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-11 23:48:44,108 [ERROR]  Exception occurred while handling uri: 'http://localhost:5008/conversations'
+Traceback (most recent call last):
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations not found
+2020-03-11 23:49:05,029 [ERROR]  Exception occurred while handling uri: 'http://localhost:5008/conversations'
+Traceback (most recent call last):
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations not found
+2020-03-11 23:49:07,454 [ERROR]  Exception occurred while handling uri: 'http://localhost:5008/conversation'
+Traceback (most recent call last):
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversation not found
