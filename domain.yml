@@ -3,32 +3,95 @@ intents:
   - goodbye
   - affirm
   - deny
-  - question
-  - mood_unhappy
-  - bot_challenge
+  - open_question
+  - what_is_covid
+  - what_symptoms
+  - how_spread
+  - how_spread_air
+  - tf_transmitted_person_no_sy
+  - tf_transmitted_person_feces
+  - what_todo_protect
+  - should_worry
+  - how_risky
+  - do_antibi_help
+  - do_medici_exist
+  - is_there_vaccine
+  - should_use_mask
+  - how_long_incubation
+  - does_my_pet_get_infected
+  - can_open_packages
+  - want_know_more
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hola, mi tarea es responder preguntas sobre Coronavirus usando fuentes confiables de información como la Organización Mundial de la Salud"
+  - text: "Hola! estoy aqui para responder tus dudas sobre Covid-19 o Coronavirus, mis respuestas se basan en Organización Mundial de Salud"
 
-  utter_response:
-    - text: "Entiendo tu pregunta"
+  utter_response_what_is_covid:
+  - text: "COVID-19 es la enfermedad infecciosa causada por el coronavirus descubierto más recientemente"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_response_what_symptoms:
+  - text: "Los síntomas más comunes de COVID-19 son fiebre, cansancio y tos seca. Algunos pacientes pueden tener dolores y molestias, congestión nasal, secreción nasal, dolor de garganta o diarrea. Estos síntomas generalmente son leves y comienzan gradualmente"
+  - text: "Los síntomas de COVID-19 son fiebre, cansancio y tos seca. La mayoría de las personas (alrededor del 80%) se recuperan de la enfermedad sin necesidad de un tratamiento especial."
+  - text: "Los síntomas son fiebre, cansancio y tos seca, lavese las manos muy bien!"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_response_how_spread:
+  - text: "Las personas pueden contraer COVID-19 de otras personas que tienen el virus. La enfermedad puede propagarse de persona a persona a través de pequeñas gotas de la nariz o la boca que se propagan cuando una persona con COVID-19 tose o exhala"
+  - text: "La enfermedad se propaga de persona enferma a otras  persona a través de pequeñas gotas de la nariz o la boca, estas gotas caen sobre objetos y superficies que si se tocan y luego se manda las manos a los ojos, la nariz o la boca, le entra el virus al  cuerpo"
+  - text: "se propaga si se pone a estornudar y no se cubre, las gotas del estornudo que caen por todo lado, si las toca despues y luego se toca la boca, la cara u ojos, se enferma"
 
-  utter_happy:
-  - text: "Great, carry on!"
+
+  utter_response_how_spread_air:
+  - text: "Los estudios realizados a la fecha sugieren que el virus que causa COVID-19 se transmite principalmente a través del contacto con gotitas respiratorias en lugar de a través del aire"
+  - text: "Estudios realizados al dia de hoy sugiere que no se transmite por el aire sino  a través del contacto con gotitas respiratorias"
+
+  utter_response_tf_transmitted_person_no_sy:
+  - text: "La principal forma en que la enfermedad se propaga es a través de gotas respiratorias expulsadas por alguien que está tosiendo. El riesgo de enfermarse por andar cerca de alguien sin ningún síntoma es muy bajo"
+
+  utter_response_tf_transmitted_person_feces:
+    - text: "El riesgo de contraer COVID-19 de las heces de una persona infectada es bajo. Si bien las investigaciones iniciales sugieren que el virus puede estar presente en las heces en algunos casos, la propagación a través de esta ruta no es una característica principal del brote"
+
+  utter_response_what_todo_protect:
+    - text: "Limpie sus manos regularmente y a fondo con un desinfectante para manos a base de alcohol o lávelas con agua y jabón"
+    - text: "Lavese super bien las manos con bastante jabon y mantenga al menos 1 metro  de distancia entre usted y cualquier persona que esté tosiendo o estornudando"
+    - text: "Lavese las manos, no se toque la boca, los ojos, o la cara en general y quedese en su casa"
+    - text: "limpie y desinfecte superficies, lavese las manos, no se toque la cara, y si puede, quedese en su casa"
+
+  utter_response_should_worry:
+    - text: "La enfermedad es manejable para niños y adultos jóvenes. Sin embargo, puede causar enfermedades graves: aproximadamente 1 de cada 5 personas que la contraen necesitan atención hospitalaria"
+
+  utter_response_how_risky:
+    - text: "Todavía se esta aprendiendo sobre cómo COVID-2019 afecta a las personas, las personas mayores y las personas con afecciones médicas preexistentes (como presión arterial alta, enfermedad cardíaca, enfermedad pulmonar, cáncer o diabetes) tienen mayor riesgo que otras"
+
+  utter_response_do_antibi_help:
+    - text: "No. Los antibióticos no funcionan contra los virus, solo funcionan en infecciones bacterianas. COVID-19 es causado por un virus, por lo que los antibióticos no funcionan"
+
+  utter_response_do_medici_exist:
+    - text: "Si bien algunos remedios tradicionales o caseros pueden proporcionar consuelo y aliviar los síntomas de COVID-19, no hay evidencia de que la medicina actual pueda prevenir o curar la enfermedad"
+
+  utter_response_is_there_vaccine:
+    - text: "Aún no. Hasta la fecha, no existe una vacuna ni un medicamento antiviral específico para prevenir o tratar COVID-2019"
+
+  utter_response_should_use_mask:
+    - text: "Solo use una máscara si está enfermo con síntomas de COVID-19 (especialmente tos) o si está cuidando a alguien que pueda tener COVID-19. el tapabocas desechable solo se puede usar una vez."
+    - text: "Use tapaboca si presenta sintomas, sino esta enfermo no deberia usarlo, ahorre los tapabocas que hay escasez mundial"
+
+  utter_response_how_long_incubation:
+    - text: "El período de incubación es el tiempo entre contagio del virus y el comienzo de  síntomas de la enfermedad. La mayoría de las estimaciones del período de incubación para COVID-19 varían de 1 a 14 días, más comúnmente alrededor de cinco días"
+
+  utter_response_does_my_pet_get_infected:
+    - text: "No. No hay evidencia de que animales de compañía o mascotas, como gatos y perros, hayan sido infectados o puedan propagar el virus que causa COVID-19."
+
+  utter_response_can_open_packages:
+    - text: "La probabilidad de que una persona infectada contamine productos comerciales es baja y el riesgo de contraer el virus  de un paquete que se ha movido, viajado y expuesto a diferentes condiciones y temperatura  es baja."
+    - text: "puede abrir el paquete o encomienda, la probabilidad es baja, sin embargo limpie las superficies antes"
+
+  utter_response_want_know_more:
+    - text: "para saber mas: https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
+
 
   utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "Chao, lavese las manos !"
 
 session_config:
   session_expiration_time: 60

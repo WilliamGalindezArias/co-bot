@@ -43,3 +43,157 @@ Traceback (most recent call last):
   File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
     raise NotFound("Requested URL {} not found".format(url))
 sanic.exceptions.NotFound: Requested URL /conversation not found
+2020-03-12 13:32:41,219 [INFO ]  Starting Rasa server on http://localhost:5008
+2020-03-12 13:32:43,684 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-12 13:32:48,883 [ERROR]  Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/app.py", line 1167, in run
+    serve(**server_settings)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/server.py", line 892, in serve
+    trigger_events(before_start, loop)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/server.py", line 668, in trigger_events
+    loop.run_until_complete(result)
+  File "uvloop/loop.pyx", line 1456, in uvloop.loop.Loop.run_until_complete
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/run.py", line 240, in load_agent_on_start
+    _tracker_store = TrackerStore.create(endpoints.tracker_store, event_broker=_broker)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/tracker_store.py", line 58, in create
+    return _create_from_endpoint_config(obj, domain, event_broker)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/tracker_store.py", line 946, in _create_from_endpoint_config
+    **endpoint_config.kwargs,
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/tracker_store.py", line 603, in __init__
+    self.engine = create_engine(engine_url)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/engine/__init__.py", line 479, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 98, in create
+    (cargs, cparams) = dialect.create_connect_args(u)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/dialects/sqlite/pysqlite.py", line 440, in create_connect_args
+    " sqlite:////absolute/path/to/file.db" % (url,)
+sqlalchemy.exc.ArgumentError: Invalid SQLite URL: sqlite://williamgpu@localhost/rasa.db?driver=my-driver
+Valid SQLite URL forms are:
+ sqlite:///:memory: (or, sqlite://)
+ sqlite:///relative/path/to/file.db
+ sqlite:////absolute/path/to/file.db
+2020-03-12 13:34:22,278 [INFO ]  Starting Rasa server on http://localhost:5008
+2020-03-12 13:34:24,340 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-12 13:34:29,433 [ERROR]  Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/app.py", line 1167, in run
+    serve(**server_settings)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/server.py", line 892, in serve
+    trigger_events(before_start, loop)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/server.py", line 668, in trigger_events
+    loop.run_until_complete(result)
+  File "uvloop/loop.pyx", line 1456, in uvloop.loop.Loop.run_until_complete
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/run.py", line 240, in load_agent_on_start
+    _tracker_store = TrackerStore.create(endpoints.tracker_store, event_broker=_broker)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/tracker_store.py", line 58, in create
+    return _create_from_endpoint_config(obj, domain, event_broker)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/tracker_store.py", line 946, in _create_from_endpoint_config
+    **endpoint_config.kwargs,
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/tracker_store.py", line 603, in __init__
+    self.engine = create_engine(engine_url)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/engine/__init__.py", line 479, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 61, in create
+    entrypoint = u._get_entrypoint()
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/engine/url.py", line 172, in _get_entrypoint
+    cls = registry.load(name)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 268, in load
+    "Can't load plugin: %s:%s" % (self.group, name)
+sqlalchemy.exc.NoSuchModuleError: Can't load plugin: sqlalchemy.dialects:http
+2020-03-12 13:37:16,179 [INFO ]  Starting Rasa server on http://localhost:5008
+2020-03-12 13:37:18,203 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-12 13:37:23,406 [ERROR]  Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/app.py", line 1167, in run
+    serve(**server_settings)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/server.py", line 892, in serve
+    trigger_events(before_start, loop)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/server.py", line 668, in trigger_events
+    loop.run_until_complete(result)
+  File "uvloop/loop.pyx", line 1456, in uvloop.loop.Loop.run_until_complete
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/run.py", line 240, in load_agent_on_start
+    _tracker_store = TrackerStore.create(endpoints.tracker_store, event_broker=_broker)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/tracker_store.py", line 58, in create
+    return _create_from_endpoint_config(obj, domain, event_broker)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/tracker_store.py", line 946, in _create_from_endpoint_config
+    **endpoint_config.kwargs,
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/tracker_store.py", line 603, in __init__
+    self.engine = create_engine(engine_url)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/engine/__init__.py", line 479, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 61, in create
+    entrypoint = u._get_entrypoint()
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/engine/url.py", line 172, in _get_entrypoint
+    cls = registry.load(name)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 268, in load
+    "Can't load plugin: %s:%s" % (self.group, name)
+sqlalchemy.exc.NoSuchModuleError: Can't load plugin: sqlalchemy.dialects:http
+2020-03-12 13:38:01,785 [INFO ]  Starting Rasa server on http://localhost:5008
+2020-03-12 13:38:03,828 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-12 13:38:09,208 [ERROR]  Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/app.py", line 1167, in run
+    serve(**server_settings)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/server.py", line 892, in serve
+    trigger_events(before_start, loop)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/server.py", line 668, in trigger_events
+    loop.run_until_complete(result)
+  File "uvloop/loop.pyx", line 1456, in uvloop.loop.Loop.run_until_complete
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/run.py", line 240, in load_agent_on_start
+    _tracker_store = TrackerStore.create(endpoints.tracker_store, event_broker=_broker)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/tracker_store.py", line 58, in create
+    return _create_from_endpoint_config(obj, domain, event_broker)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/tracker_store.py", line 946, in _create_from_endpoint_config
+    **endpoint_config.kwargs,
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/tracker_store.py", line 603, in __init__
+    self.engine = create_engine(engine_url)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/engine/__init__.py", line 479, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 61, in create
+    entrypoint = u._get_entrypoint()
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/engine/url.py", line 172, in _get_entrypoint
+    cls = registry.load(name)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 268, in load
+    "Can't load plugin: %s:%s" % (self.group, name)
+sqlalchemy.exc.NoSuchModuleError: Can't load plugin: sqlalchemy.dialects:http
+2020-03-12 13:39:45,393 [INFO ]  Starting Rasa server on http://localhost:5008
+2020-03-12 13:39:47,555 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-12 13:39:52,786 [ERROR]  Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/app.py", line 1167, in run
+    serve(**server_settings)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/server.py", line 892, in serve
+    trigger_events(before_start, loop)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sanic/server.py", line 668, in trigger_events
+    loop.run_until_complete(result)
+  File "uvloop/loop.pyx", line 1456, in uvloop.loop.Loop.run_until_complete
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/run.py", line 240, in load_agent_on_start
+    _tracker_store = TrackerStore.create(endpoints.tracker_store, event_broker=_broker)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/tracker_store.py", line 58, in create
+    return _create_from_endpoint_config(obj, domain, event_broker)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/tracker_store.py", line 946, in _create_from_endpoint_config
+    **endpoint_config.kwargs,
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/tracker_store.py", line 603, in __init__
+    self.engine = create_engine(engine_url)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/engine/__init__.py", line 479, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 61, in create
+    entrypoint = u._get_entrypoint()
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/engine/url.py", line 172, in _get_entrypoint
+    cls = registry.load(name)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 268, in load
+    "Can't load plugin: %s:%s" % (self.group, name)
+sqlalchemy.exc.NoSuchModuleError: Can't load plugin: sqlalchemy.dialects:mysql.pymsql
+2020-03-12 13:42:09,673 [INFO ]  Starting Rasa server on http://localhost:5008
+2020-03-12 13:42:12,166 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-12 13:42:17,483 [ERROR]  Could not create tables: (psycopg2.ProgrammingError) invalid dsn: invalid connection option "driver"
+
+(Background on this error at: http://sqlalche.me/e/f405)
+2020-03-12 13:55:08,713 [INFO ]  Starting Rasa server on http://localhost:5008
+2020-03-12 13:55:11,268 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-12 13:55:16,372 [ERROR]  Could not create tables: (psycopg2.OperationalError) FATAL:  database "rasa.db" does not exist
+
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-03-12 13:55:49,761 [INFO ]  Starting Rasa server on http://localhost:5008
+2020-03-12 13:55:52,252 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
