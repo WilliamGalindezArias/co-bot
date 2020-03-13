@@ -1,9 +1,4 @@
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - open_question
   - what_is_covid
   - what_symptoms
   - how_spread
@@ -21,6 +16,12 @@ intents:
   - does_my_pet_get_infected
   - can_open_packages
   - want_know_more
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - open_question
+
 
 actions:
   - action_question
