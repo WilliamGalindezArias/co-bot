@@ -298,3 +298,179 @@ sqlalchemy.exc.NoSuchModuleError: Can't load plugin: sqlalchemy.dialects:mysql.p
 2020-03-13 03:23:46,834 [DEBUG]  There is no trained model: component is either not trained or didn't receive enough training data.
 2020-03-13 03:23:46,834 [DEBUG]  Adding following selector key to message property: default
 2020-03-13 03:23:46,834 [DEBUG]  Received user message 'me puedo enfermar por el aire?' with intent '{'name': 'open_question', 'confidence': 0.9992977380752563}' and entities '[]'
+2020-03-13 03:32:52,564 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-03-13 03:32:52,567 [INFO ]  Starting Rasa server on http://localhost:5008
+2020-03-13 03:32:52,567 [DEBUG]  Using the default number of Sanic workers (1).
+2020-03-13 03:32:52,568 [INFO ]  Enabling coroutine debugging. Loop id 5567938584.
+2020-03-13 03:32:52,787 [DEBUG]  Extracted model to '/var/folders/n3/ly8yqlmn637g2h3mh8lvg6j40000gn/T/tmpvq8osdmy'.
+2020-03-13 03:32:55,138 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-13 03:32:55,175 [DEBUG]  Loading the model ...
+2020-03-13 03:32:55,901 [DEBUG]  Finished loading the model.
+2020-03-13 03:32:55,901 [DEBUG]  Building tensorflow prediction graph...
+2020-03-13 03:33:00,311 [DEBUG]  Finished building tensorflow prediction graph.
+2020-03-13 03:33:00,313 [DEBUG]  Failed to load model. Maybe the path '/var/folders/n3/ly8yqlmn637g2h3mh8lvg6j40000gn/T/tmpvq8osdmy/nlu' doesn't exist?
+2020-03-13 03:33:00,319 [DEBUG]  Attempting to connect to database via 'postgres://williamgpu@/rasa'.
+2020-03-13 03:33:00,387 [DEBUG]  Connection to SQL database 'rasa' successful.
+2020-03-13 03:33:00,388 [DEBUG]  Connected to SQLTrackerStore.
+2020-03-13 03:33:00,388 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-03-13 03:33:00,605 [DEBUG]  Extracted model to '/var/folders/n3/ly8yqlmn637g2h3mh8lvg6j40000gn/T/tmp9yvd9ndp'.
+2020-03-13 03:33:00,608 [DEBUG]  Using yaml library: /Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-03-13 03:33:00,648 [DEBUG]  Loading the model ...
+2020-03-13 03:33:00,831 [DEBUG]  Finished loading the model.
+2020-03-13 03:33:00,831 [DEBUG]  Building tensorflow prediction graph...
+2020-03-13 03:33:01,583 [DEBUG]  Finished building tensorflow prediction graph.
+2020-03-13 03:33:01,588 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-03-13 03:33:11,972 [DEBUG]  There is no trained model: component is either not trained or didn't receive enough training data.
+2020-03-13 03:33:11,973 [DEBUG]  Adding following selector key to message property: default
+2020-03-13 03:33:11,973 [DEBUG]  Received user message 'me puedo enfermar por el aire?' with intent '{'name': 'open_question', 'confidence': 0.999932050704956}' and entities '[]'
+2020-03-13 03:33:27,702 [DEBUG]  Recreating tracker from sender id 'william'
+2020-03-13 03:33:27,743 [DEBUG]  There is no trained model: component is either not trained or didn't receive enough training data.
+2020-03-13 03:33:27,743 [DEBUG]  Adding following selector key to message property: default
+2020-03-13 03:33:27,743 [DEBUG]  Received user message 'me puedo enfermar por el aire ?' with intent '{'name': 'open_question', 'confidence': 0.999932050704956}' and entities '[]'
+2020-03-13 03:33:27,743 [DEBUG]  Logged UserUtterance - tracker now has 11 events.
+2020-03-13 03:33:27,744 [DEBUG]  Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_open_question': 1.0, 'prev_action_listen': 1.0}, {'intent_open_question': 1.0, 'prev_utter_response_open_question': 1.0}, {'intent_open_question': 1.0, 'prev_action_listen': 1.0}]
+2020-03-13 03:33:27,744 [DEBUG]  There is no memorised next action
+2020-03-13 03:33:27,768 [DEBUG]  Predicted next action using policy_1_TEDPolicy
+2020-03-13 03:33:27,768 [DEBUG]  Predicted next action 'action_question' with confidence 0.98.
+2020-03-13 03:33:27,769 [ERROR]  The model predicted the custom action 'action_question', but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration via the --endpoints flag. https://rasa.com/docs/rasa/core/actions
+2020-03-13 03:33:27,769 [ERROR]  Encountered an exception while running action 'action_question'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2020-03-13 03:33:27,769 [DEBUG]  Failed to execute custom action.
+Traceback (most recent call last):
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/processor.py", line 596, in _run_action
+    events = await action.run(output_channel, nlg, tracker, self.domain)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/asyncio/coroutines.py", line 110, in __next__
+    return self.gen.send(None)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/actions/action.py", line 542, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+2020-03-13 03:33:27,773 [DEBUG]  Action 'action_question' ended with events '[]'.
+2020-03-13 03:33:27,773 [DEBUG]  Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_open_question': 1.0, 'prev_action_listen': 1.0}, {'intent_open_question': 1.0, 'prev_utter_response_open_question': 1.0}, {'intent_open_question': 1.0, 'prev_action_listen': 1.0}, {'prev_action_question': 1.0, 'intent_open_question': 1.0}]
+2020-03-13 03:33:27,773 [DEBUG]  There is no memorised next action
+2020-03-13 03:33:27,798 [DEBUG]  There is no mapped action for the predicted intent, 'open_question'.
+2020-03-13 03:33:27,798 [DEBUG]  Predicted next action using policy_1_TEDPolicy
+2020-03-13 03:33:27,798 [DEBUG]  Predicted next action 'action_listen' with confidence 0.96.
+2020-03-13 03:33:27,798 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2020-03-13 03:33:27,809 [DEBUG]  Tracker with sender_id 'william' stored to database
+2020-03-13 03:33:27,810 [DEBUG]  Deleted lock for conversation 'william'.
+2020-03-13 03:33:31,724 [DEBUG]  Recreating tracker from sender id 'william'
+2020-03-13 03:33:31,773 [DEBUG]  There is no trained model: component is either not trained or didn't receive enough training data.
+2020-03-13 03:33:31,773 [DEBUG]  Adding following selector key to message property: default
+2020-03-13 03:33:31,773 [DEBUG]  Received user message 'me puedo enfermar por el aire ?' with intent '{'name': 'open_question', 'confidence': 0.999932050704956}' and entities '[]'
+2020-03-13 03:33:31,774 [DEBUG]  Logged UserUtterance - tracker now has 14 events.
+2020-03-13 03:33:31,774 [DEBUG]  Current tracker state [{'intent_open_question': 1.0, 'prev_action_listen': 1.0}, {'intent_open_question': 1.0, 'prev_utter_response_open_question': 1.0}, {'intent_open_question': 1.0, 'prev_action_listen': 1.0}, {'prev_action_question': 1.0, 'intent_open_question': 1.0}, {'intent_open_question': 1.0, 'prev_action_listen': 1.0}]
+2020-03-13 03:33:31,774 [DEBUG]  There is no memorised next action
+2020-03-13 03:33:31,802 [DEBUG]  Predicted next action using policy_1_TEDPolicy
+2020-03-13 03:33:31,803 [DEBUG]  Predicted next action 'action_question' with confidence 0.97.
+2020-03-13 03:33:31,803 [ERROR]  The model predicted the custom action 'action_question', but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration via the --endpoints flag. https://rasa.com/docs/rasa/core/actions
+2020-03-13 03:33:31,803 [ERROR]  Encountered an exception while running action 'action_question'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2020-03-13 03:33:31,804 [DEBUG]  Failed to execute custom action.
+Traceback (most recent call last):
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/processor.py", line 596, in _run_action
+    events = await action.run(output_channel, nlg, tracker, self.domain)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/asyncio/coroutines.py", line 110, in __next__
+    return self.gen.send(None)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/core/actions/action.py", line 542, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+2020-03-13 03:33:31,804 [DEBUG]  Action 'action_question' ended with events '[]'.
+2020-03-13 03:33:31,805 [DEBUG]  Current tracker state [{'intent_open_question': 1.0, 'prev_utter_response_open_question': 1.0}, {'intent_open_question': 1.0, 'prev_action_listen': 1.0}, {'prev_action_question': 1.0, 'intent_open_question': 1.0}, {'intent_open_question': 1.0, 'prev_action_listen': 1.0}, {'prev_action_question': 1.0, 'intent_open_question': 1.0}]
+2020-03-13 03:33:31,805 [DEBUG]  There is no memorised next action
+2020-03-13 03:33:31,833 [DEBUG]  There is no mapped action for the predicted intent, 'open_question'.
+2020-03-13 03:33:31,833 [DEBUG]  Predicted next action using policy_1_TEDPolicy
+2020-03-13 03:33:31,834 [DEBUG]  Predicted next action 'action_listen' with confidence 0.96.
+2020-03-13 03:33:31,834 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2020-03-13 03:33:31,841 [DEBUG]  Tracker with sender_id 'william' stored to database
+2020-03-13 03:33:31,841 [DEBUG]  Deleted lock for conversation 'william'.
+2020-03-13 03:50:11,270 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-03-13 03:50:11,274 [INFO ]  Starting Rasa server on http://localhost:5008
+2020-03-13 03:50:11,274 [DEBUG]  Using the default number of Sanic workers (1).
+2020-03-13 03:50:11,275 [INFO ]  Enabling coroutine debugging. Loop id 5635571736.
+2020-03-13 03:50:11,496 [DEBUG]  Extracted model to '/var/folders/n3/ly8yqlmn637g2h3mh8lvg6j40000gn/T/tmpycm8h_1l'.
+2020-03-13 03:50:13,315 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-13 03:50:13,347 [DEBUG]  Loading the model ...
+2020-03-13 03:50:14,043 [DEBUG]  Finished loading the model.
+2020-03-13 03:50:14,043 [DEBUG]  Building tensorflow prediction graph...
+2020-03-13 03:50:18,329 [DEBUG]  Finished building tensorflow prediction graph.
+2020-03-13 03:50:18,331 [DEBUG]  Failed to load model. Maybe the path '/var/folders/n3/ly8yqlmn637g2h3mh8lvg6j40000gn/T/tmpycm8h_1l/nlu' doesn't exist?
+2020-03-13 03:50:18,337 [DEBUG]  Attempting to connect to database via 'postgres://williamgpu@/rasa'.
+2020-03-13 03:50:18,402 [DEBUG]  Connection to SQL database 'rasa' successful.
+2020-03-13 03:50:18,402 [DEBUG]  Connected to SQLTrackerStore.
+2020-03-13 03:50:18,403 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-03-13 03:50:18,617 [DEBUG]  Extracted model to '/var/folders/n3/ly8yqlmn637g2h3mh8lvg6j40000gn/T/tmp420_r5pa'.
+2020-03-13 03:50:18,618 [DEBUG]  Using yaml library: /Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-03-13 03:50:18,655 [DEBUG]  Loading the model ...
+2020-03-13 03:50:18,836 [DEBUG]  Finished loading the model.
+2020-03-13 03:50:18,836 [DEBUG]  Building tensorflow prediction graph...
+2020-03-13 03:50:19,586 [DEBUG]  Finished building tensorflow prediction graph.
+2020-03-13 03:50:19,589 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-03-13 03:50:34,833 [DEBUG]  There is no trained model: component is either not trained or didn't receive enough training data.
+2020-03-13 03:50:34,833 [DEBUG]  Adding following selector key to message property: default
+2020-03-13 03:50:34,833 [DEBUG]  Received user message 'me puedo enfermar por el aire?' with intent '{'name': 'how_spread_air', 'confidence': 0.3578369617462158}' and entities '[]'
+2020-03-13 03:50:51,570 [DEBUG]  Recreating tracker from sender id 'william'
+2020-03-13 03:50:51,611 [DEBUG]  There is no trained model: component is either not trained or didn't receive enough training data.
+2020-03-13 03:50:51,611 [DEBUG]  Adding following selector key to message property: default
+2020-03-13 03:50:51,611 [DEBUG]  Received user message 'me puedo enfermar por el aire ?' with intent '{'name': 'how_spread_air', 'confidence': 0.3578369617462158}' and entities '[]'
+2020-03-13 03:50:51,612 [DEBUG]  Logged UserUtterance - tracker now has 17 events.
+2020-03-13 03:50:51,612 [DEBUG]  Current tracker state [{'prev_action_listen': 1.0, 'intent_open_question': 1.0}, {'intent_open_question': 1.0, 'prev_action_question': 1.0}, {'prev_action_listen': 1.0, 'intent_open_question': 1.0}, {'intent_open_question': 1.0, 'prev_action_question': 1.0}, {'prev_action_listen': 1.0, 'intent_how_spread_air': 1.0}]
+2020-03-13 03:50:51,612 [DEBUG]  There is no memorised next action
+2020-03-13 03:50:51,638 [DEBUG]  Predicted next action using policy_1_TEDPolicy
+2020-03-13 03:50:51,638 [DEBUG]  Predicted next action 'action_question' with confidence 0.99.
+2020-03-13 03:50:51,639 [DEBUG]  Calling action endpoint to run action 'action_question'.
+2020-03-13 03:50:51,672 [DEBUG]  Action 'action_question' ended with events '[BotUttered('Estudios realizados al dia de hoy sugiere que no se transmite por el aire sino  a través del contacto con gotitas respiratorias', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {}, 1584067851.6719449)]'.
+2020-03-13 03:50:51,673 [DEBUG]  Current tracker state [{'intent_open_question': 1.0, 'prev_action_question': 1.0}, {'prev_action_listen': 1.0, 'intent_open_question': 1.0}, {'intent_open_question': 1.0, 'prev_action_question': 1.0}, {'prev_action_listen': 1.0, 'intent_how_spread_air': 1.0}, {'intent_how_spread_air': 1.0, 'prev_action_question': 1.0}]
+2020-03-13 03:50:51,673 [DEBUG]  There is no memorised next action
+2020-03-13 03:50:51,697 [DEBUG]  There is no mapped action for the predicted intent, 'how_spread_air'.
+2020-03-13 03:50:51,697 [DEBUG]  Predicted next action using policy_1_TEDPolicy
+2020-03-13 03:50:51,698 [DEBUG]  Predicted next action 'action_listen' with confidence 0.98.
+2020-03-13 03:50:51,698 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2020-03-13 03:50:51,708 [DEBUG]  Tracker with sender_id 'william' stored to database
+2020-03-13 03:50:51,709 [DEBUG]  Deleted lock for conversation 'william'.
+2020-03-13 11:20:27,993 [DEBUG]  There is no trained model: component is either not trained or didn't receive enough training data.
+2020-03-13 11:20:27,996 [DEBUG]  Adding following selector key to message property: default
+2020-03-13 11:20:27,996 [DEBUG]  Received user message 'tengo tos?' with intent '{'name': 'want_know_more', 'confidence': 0.4413224458694458}' and entities '[]'

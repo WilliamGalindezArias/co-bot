@@ -26,6 +26,11 @@ intents:
 actions:
   - action_question
 
+entities:
+  - enfermedad
+  - coronavirus
+  - animal
+
 responses:
   utter_greet:
   - text: "Hola, mi tarea es responder preguntas sobre Coronavirus usando fuentes confiables de información como la Organización Mundial de la Salud"
