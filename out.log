@@ -197,3 +197,104 @@ sqlalchemy.exc.NoSuchModuleError: Can't load plugin: sqlalchemy.dialects:mysql.p
 (Background on this error at: http://sqlalche.me/e/e3q8)
 2020-03-12 13:55:49,761 [INFO ]  Starting Rasa server on http://localhost:5008
 2020-03-12 13:55:52,252 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-13 03:15:34,400 [INFO ]  Starting Rasa server on http://localhost:5008
+2020-03-13 03:15:36,500 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-13 03:21:45,640 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-03-13 03:21:45,643 [INFO ]  Starting Rasa server on http://localhost:5008
+2020-03-13 03:21:45,644 [DEBUG]  Using the default number of Sanic workers (1).
+2020-03-13 03:21:45,645 [INFO ]  Enabling coroutine debugging. Loop id 5512626200.
+2020-03-13 03:21:45,868 [DEBUG]  Extracted model to '/var/folders/n3/ly8yqlmn637g2h3mh8lvg6j40000gn/T/tmp4i8pddi6'.
+2020-03-13 03:21:48,178 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-13 03:21:48,210 [DEBUG]  Loading the model ...
+2020-03-13 03:21:48,925 [DEBUG]  Finished loading the model.
+2020-03-13 03:21:48,925 [DEBUG]  Building tensorflow prediction graph...
+2020-03-13 03:21:53,359 [DEBUG]  Finished building tensorflow prediction graph.
+2020-03-13 03:21:53,361 [DEBUG]  Failed to load model. Maybe the path '/var/folders/n3/ly8yqlmn637g2h3mh8lvg6j40000gn/T/tmp4i8pddi6/nlu' doesn't exist?
+2020-03-13 03:21:53,367 [DEBUG]  Attempting to connect to database via 'postgres://williamgpu@/rasa'.
+2020-03-13 03:21:53,425 [DEBUG]  Connection to SQL database 'rasa' successful.
+2020-03-13 03:21:53,425 [DEBUG]  Connected to SQLTrackerStore.
+2020-03-13 03:21:53,425 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-03-13 03:21:53,644 [DEBUG]  Extracted model to '/var/folders/n3/ly8yqlmn637g2h3mh8lvg6j40000gn/T/tmpu_9lpkat'.
+2020-03-13 03:21:53,647 [DEBUG]  Using yaml library: /Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-03-13 03:21:53,686 [DEBUG]  Loading the model ...
+2020-03-13 03:21:53,866 [DEBUG]  Finished loading the model.
+2020-03-13 03:21:53,866 [DEBUG]  Building tensorflow prediction graph...
+2020-03-13 03:21:54,616 [DEBUG]  Finished building tensorflow prediction graph.
+2020-03-13 03:21:54,619 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-03-13 03:22:33,542 [DEBUG]  There is no trained model: component is either not trained or didn't receive enough training data.
+2020-03-13 03:22:33,542 [DEBUG]  Adding following selector key to message property: default
+2020-03-13 03:22:33,542 [DEBUG]  Received user message 'me puedo enfermar por el aire?' with intent '{'name': 'open_question', 'confidence': 0.9992977380752563}' and entities '[]'
+2020-03-13 03:23:12,259 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-03-13 03:23:12,260 [INFO ]  Starting Rasa server on http://localhost:5008
+2020-03-13 03:23:12,260 [DEBUG]  Using the default number of Sanic workers (1).
+2020-03-13 03:23:12,261 [INFO ]  Enabling coroutine debugging. Loop id 5510004760.
+2020-03-13 03:23:12,480 [DEBUG]  Extracted model to '/var/folders/n3/ly8yqlmn637g2h3mh8lvg6j40000gn/T/tmpxc2li70r'.
+2020-03-13 03:23:14,746 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-es_core_news_sm'.
+2020-03-13 03:23:14,784 [DEBUG]  Loading the model ...
+2020-03-13 03:23:15,517 [DEBUG]  Finished loading the model.
+2020-03-13 03:23:15,518 [DEBUG]  Building tensorflow prediction graph...
+2020-03-13 03:23:19,843 [DEBUG]  Finished building tensorflow prediction graph.
+2020-03-13 03:23:19,845 [DEBUG]  Failed to load model. Maybe the path '/var/folders/n3/ly8yqlmn637g2h3mh8lvg6j40000gn/T/tmpxc2li70r/nlu' doesn't exist?
+2020-03-13 03:23:19,852 [DEBUG]  Attempting to connect to database via 'postgres://williamgpu@/rasa'.
+2020-03-13 03:23:19,916 [DEBUG]  Connection to SQL database 'rasa' successful.
+2020-03-13 03:23:19,916 [DEBUG]  Connected to SQLTrackerStore.
+2020-03-13 03:23:19,916 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-03-13 03:23:20,137 [DEBUG]  Extracted model to '/var/folders/n3/ly8yqlmn637g2h3mh8lvg6j40000gn/T/tmp068t2bm1'.
+2020-03-13 03:23:20,140 [DEBUG]  Using yaml library: /Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-03-13 03:23:20,181 [DEBUG]  Loading the model ...
+2020-03-13 03:23:20,363 [DEBUG]  Finished loading the model.
+2020-03-13 03:23:20,363 [DEBUG]  Building tensorflow prediction graph...
+2020-03-13 03:23:21,202 [DEBUG]  Finished building tensorflow prediction graph.
+2020-03-13 03:23:21,205 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-03-13 03:23:39,396 [DEBUG]  There is no trained model: component is either not trained or didn't receive enough training data.
+2020-03-13 03:23:39,396 [DEBUG]  Adding following selector key to message property: default
+2020-03-13 03:23:39,397 [DEBUG]  Received user message 'me puedo enfermar por el aire?' with intent '{'name': 'open_question', 'confidence': 0.9992977380752563}' and entities '[]'
+2020-03-13 03:23:46,834 [DEBUG]  There is no trained model: component is either not trained or didn't receive enough training data.
+2020-03-13 03:23:46,834 [DEBUG]  Adding following selector key to message property: default
+2020-03-13 03:23:46,834 [DEBUG]  Received user message 'me puedo enfermar por el aire?' with intent '{'name': 'open_question', 'confidence': 0.9992977380752563}' and entities '[]'

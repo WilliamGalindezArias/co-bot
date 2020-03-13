@@ -22,10 +22,16 @@ intents:
   - can_open_packages
   - want_know_more
 
+actions:
+  - action_question
+
 responses:
   utter_greet:
   - text: "Hola, mi tarea es responder preguntas sobre Coronavirus usando fuentes confiables de información como la Organización Mundial de la Salud"
   - text: "Hola! estoy aqui para responder tus dudas sobre Covid-19 o Coronavirus, mis respuestas se basan en Organización Mundial de Salud"
+
+  utter_response_open_question:
+    - text: "Info oficial en www.who.int/news-room/q-a-detail/q-a-coronaviruse "
 
   utter_response_what_is_covid:
   - text: "COVID-19 es la enfermedad infecciosa causada por el coronavirus descubierto más recientemente"

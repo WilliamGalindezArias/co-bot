@@ -48,7 +48,7 @@ class CovidQuestion(Action):
         intent = tracker.latest_message["intent"].get("name")
 
         if intent in intents:
-            dispatcher.utter_template("utter_"+intent, tracker)
+            dispatcher.utter_template("utter_response_"+intent, tracker)
 
 
         return []
