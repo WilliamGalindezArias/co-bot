@@ -474,3 +474,19 @@ Exception: Failed to execute custom action.
 2020-03-13 11:20:27,993 [DEBUG]  There is no trained model: component is either not trained or didn't receive enough training data.
 2020-03-13 11:20:27,996 [DEBUG]  Adding following selector key to message property: default
 2020-03-13 11:20:27,996 [DEBUG]  Received user message 'tengo tos?' with intent '{'name': 'want_know_more', 'confidence': 0.4413224458694458}' and entities '[]'
+2020-03-14 17:37:21,082 [DEBUG]  There is no trained model: component is either not trained or didn't receive enough training data.
+2020-03-14 17:37:21,087 [DEBUG]  Adding following selector key to message property: default
+2020-03-14 17:37:21,087 [DEBUG]  Received user message 'se pasa por el aire?' with intent '{'name': 'how_spread_air', 'confidence': 0.8679668307304382}' and entities '[]'
+2020-03-14 23:01:24,250 [DEBUG]  There is no trained model: component is either not trained or didn't receive enough training data.
+2020-03-14 23:01:24,255 [DEBUG]  Adding following selector key to message property: default
+2020-03-14 23:01:24,256 [DEBUG]  Received user message 'se pasa por el aire?' with intent '{'name': 'how_spread_air', 'confidence': 0.8679668307304382}' and entities '[]'
+2020-03-14 23:04:27,296 [DEBUG]  Traceback (most recent call last):
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/server.py", line 981, in parse
+    data = emulator.normalise_request_json(request.json)
+  File "/Users/williamgpu/miniconda3/envs/co_bot/lib/python3.6/site-packages/rasa/nlu/emulators/no_emulator.py", line 11, in normalise_request_json
+    "text": data["text"][0] if type(data["text"]) == list else data["text"]
+KeyError: 'text'
+
+2020-03-14 23:05:33,271 [DEBUG]  There is no trained model: component is either not trained or didn't receive enough training data.
+2020-03-14 23:05:33,271 [DEBUG]  Adding following selector key to message property: default
+2020-03-14 23:05:33,271 [DEBUG]  Received user message 'se pasa por el aire?' with intent '{'name': 'how_spread_air', 'confidence': 0.8679668307304382}' and entities '[]'
