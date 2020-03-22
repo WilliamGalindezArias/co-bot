@@ -1,18 +1,22 @@
-stages:
-    - build
-    - test
+image: registry.gitlab.com/william.dev.env/co_bot/co-bot-spanish
 
-build:
-    stage: build
-    script:
-      - echo "Building"
-      - mkdir build
-      - touch build/test.txt
-    artifacts:
-        paths:
-        - build/
+stages:
+    - test
+    - deploy
+    
 test:
     stage: test
-    script: 
-      - echo "Testing"
-      - test -f "build/test.txt"
+    script:
+        - echo "Testing Runner "
+
+deploy:
+    stage: deploy 
+    script:
+        - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/prod-covid-bot-colombia.git
+        - git push heroku master
+        - echo "Deployed to Production Server  https://git.heroku.com/prod-covid-bot-colombia.git"
+    environment:
+        name: production
+        url:  https://prod-covid-bot-colombia.herokuapp.com/
+    only:
+        - master
