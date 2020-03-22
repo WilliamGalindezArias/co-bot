@@ -11,9 +11,12 @@ test:
 
 deploy:
     stage: deploy 
+    before_script:
+        - git checkout master
+
     script:
         - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/prod-covid-bot-colombia.git
-        - git push -f heroku HEAD:master
+        - git push -f https://git.heroku.com/prod-covid-bot-colombia.git HEAD:master
         - echo "Deployed to Production Server  https://git.heroku.com/prod-covid-bot-colombia.git"
     environment:
         name: production
