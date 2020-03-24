@@ -1,0 +1,7 @@
+{
+  "name": "co-bot template",
+  "description": "Bot installation  using Docker",
+  "repository": "https://gitlab.com/william.dev.env/co_bot/-/tree/master",
+  "logo": "https://s3-us-west-2.amazonaws.com/spaceocanadawp/2019/12/rasa-framework.png",
+  "stack": "container"
+}
