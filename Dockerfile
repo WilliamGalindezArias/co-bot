@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/william.dev.env/co_bot
+FROM registry.gitlab.com/william.dev.env/co_bot/co-bot-spanish
 MAINTAINER William Galindez Arias
 
 #RUN service postgresql start
